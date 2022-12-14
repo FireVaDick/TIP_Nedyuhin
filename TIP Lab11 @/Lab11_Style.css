@@ -1,0 +1,98 @@
+:root {
+  --dark:#0f0f0f;
+  --blackblue:#2d355b;
+  --rock:#666666;
+  --grey:#c9c9c9;
+  --lightgrey:#e6e6e6;
+  --white:#ffffff;
+
+  --pink:#f5b2f5;
+  --lily:#ff8ebd;
+  --bubble:#f54773;
+  --red:#ff0000;
+  --peach:#ff4545;
+  --lightred:#c4383e;
+  --violet:#b451ff;
+  --magenta:#cf10ff; 
+  --water:#0070c0;
+  --blue:#2f54fc;
+  --moon:#6666ff;
+  --lavender:#9999ff;
+  --bluesteel:#a4bbfa;
+  --steel:#c9d7fd;
+  --orange:#faab60;
+  --yellow:#fdfd5e;
+  --lightyellow:#f7f784;
+  --sand:#fdf3b6;
+  --darkgreen:#0e9135;
+  --green:#1cd153;
+  --mint:#94f0b0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* #region Main */
+main{
+  margin: 0 15px;
+  padding: 10px;
+  font: 20px Calibri;
+}
+main p{
+  margin: 10px 0;
+}
+main div{
+  padding: 10px 0px 0px 0px;
+}
+main button{
+  margin: 20px 0px;
+  padding: 5px 20px;
+  font: bold 16pt Calibri;
+  border-radius: 10px;
+  border: 5px solid var(--lightyellow);
+  background-color: var(--lightyellow);
+}
+main button:hover{
+  cursor: pointer;
+  border-color: var(--green);
+  background-color: var(--green);
+}
+
+div.ul{
+  font-weight: bold;
+  color: var(--bubble);
+}
+div.ul li{
+  color: var(--rock);
+}
+div.img{
+  margin: 10px 0px;
+  font-weight: bold;
+  color: var(--bubble);
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+}
+/* #endregion Main */
+
+/* #region Table */
+table{
+  margin: 20px 0px 0px 0px;
+  border-spacing: 5px;
+  border: 3px solid var(--blackblue);
+}
+table caption{
+  margin: 5px;
+  font-weight: bold;
+  color: var(--bubble);
+}
+table tr td{
+  padding: 5px;
+  border: 2px solid var(--blackblue);
+}
+/* #endregion Table */

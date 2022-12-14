@@ -1,0 +1,148 @@
+:root {
+  --dark:#0f0f0f;
+  --blackblue:#2d355b;
+  --rock:#666666;
+  --grey:#c9c9c9;
+  --lightgrey:#e6e6e6;
+  --white:#ffffff;
+
+  --pink:#f5b2f5;
+  --lily:#ff8ebd;
+  --bubble:#f54773;
+  --red:#ff0000;
+  --peach:#ff4545;
+  --lightred:#c4383e;
+  --violet:#7030a0;
+  --magenta:#cf10ff; 
+  --water:#0070c0;
+  --blue:#2f54fc;
+  --moon:#6666ff;
+  --lavender:#9999ff;
+  --steel:#eeeeff;
+  --orange:#ffa42d;
+  --yellow:#fdfd5e;
+  --lightyellow:#ffff83;
+  --green:#1cd153;
+}
+
+html {
+  margin: 5px;
+}
+body {
+  font-family: Calibri;
+  background-color: var(--steel);
+}
+
+h1 {
+  text-align: center;
+  color: var(--peach);
+  font-weight: 900;
+}
+p {
+  margin-right: 15px;
+  text-align: right;
+  color: var(--blue);
+  font-weight: 600;
+  font-style: italic;
+  font-size: calc(1em + 2pt);
+}
+img{
+  width: 300px;
+  float: left;
+}
+table {
+  width: 300px;
+  margin-right: 20px;
+  font-size: 1.1rem;
+}
+th {
+  background-color: black;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: var(--white);
+}
+tr:hover {
+  background-color: var(--lily);
+}
+
+/*Перечень*/
+.list ul {
+  display: inline-block;
+  list-style-type: circle;
+}
+.list ul li {
+  font-size: 1.2rem;
+}
+
+/*Меню*/
+.top-menu { /*Всё меню*/
+  background-color: var(--orange);
+}
+.top-menu ul#mainMenu{
+  text-align: center;
+}
+  .top-menu ul li{ /*Сами ячейки*/
+      padding: 10px 40px;
+      font: 1.2rem "v_CreativeBlock BB", "Calibri";
+      list-style: none;
+      display: inline-block;
+      background-color: var(--orange);
+      position: relative;
+  }
+  .top-menu ul li:hover{
+      background-color: var(--yellow);
+  }
+  .top-menu ul li:active{
+      background-color: var(--lightyellow);
+  }   
+      .top-menu ul li a{ /*Что внутри ячейки*/
+          color: var(--dark);
+          padding: 5px 3px;
+          text-decoration: none;
+          display: block;
+      }
+      .top-menu ul li a:active{
+          text-shadow: 0.1em 0.13em 0.05em var(--grey);
+      }
+          .top-menu ul li ul{ /*Выпадающее меню прячется*/
+              display: none;
+              position: absolute;
+              padding-left: 0;
+              width: 100px;
+              padding-top: 3px;
+          }
+          .top-menu ul li:hover ul{ /*Показ выпадающего меню при наведении*/
+              display: block;
+              text-align: left;
+              left: -15px;
+          }
+
+
+/*Навигация*/
+.navOtherPage {
+  position: absolute;
+  bottom: 2%;
+  width: 98%;
+}
+.navOtherPage a:link, .navOtherPage a:visited
+{
+    background-color: var(--blackblue);
+    display: block;
+    margin-top: 5px;
+    padding-top: 12px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font: 1.0rem "CCRickVeitch W05(RUS BY LYAJKA)", "Arial";
+    color: var(--white);
+}
+.navOtherPage a:hover
+{
+    text-decoration: none;
+    color: var(--green);   
+}
+.navOtherPage a:active
+{
+    color: var(--red);   
+}

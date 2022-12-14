@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 3</title>
+  <link rel="stylesheet" href="./Lab3_Style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./Lab3_Page1.html">Задание 1</a>
+      <a href="./Lab3_Page2.html">Задание 2</a>
+      <a href="./Lab3_Page3.html">Задание 3</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>на плоскости заданы координаты трех точек. Напишите сценарий,
+      который вычисляет площадь треугольника (использовать событие Focus)</p>
+
+    <div>
+      <label for="X1">X1</label>
+      <input type="number" id="X1" value="0">
+      <label for="Y1">Y1</label>
+      <input type="number" id="Y1" value="0"">
+    </div>
+
+    <div>
+      <label for="X2">X2</label>
+      <input type="number" id="X2" value="0"">
+      <label for="Y2">Y2</label>
+      <input type="number" id="Y2" value="0"">
+    </div>
+
+    <div>
+      <label for="X3">X3</label>
+      <input type="number" id="X3" value="0"">
+      <label for="Y3">Y3</label>
+      <input type="number" id="Y3" value="0"">
+
+      <input type="submit" value="Рассчитать" onfocus="Tusk1();">
+    </div>
+    
+    <p><strong>Результат:</strong> <span id="answer"></span></p>
+  </main>
+
+  <script src="./Lab3_Tusks.js"></script>
+</body>
+</html>

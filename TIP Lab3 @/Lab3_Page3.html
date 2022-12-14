@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 3</title>
+  <link rel="stylesheet" href="./Lab3_Style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./Lab3_Page1.html">Задание 1</a>
+      <a href="./Lab3_Page2.html">Задание 2</a>
+      <a href="./Lab3_Page3.html">Задание 3</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>напишите сценарий, который обменивает местами
+      значения двух введенных переменных (использовать событие Blur)</p>
+
+    <div>
+      <label for="firstInput">Первое</label>
+      <input type="text" id="firstValue" value="0" onBlur="SwapInputs()">
+      <label for="secondValue">Второе</label>
+      <input type="text" id="secondValue" value="0" onBlur="SwapInputs()">
+      <button onclick="SwapInputs()">Поменять значения полей</button>
+    </div>
+  </main>  
+
+  <script src="./Lab3_Tusks.js"></script>
+</body>
+</html>

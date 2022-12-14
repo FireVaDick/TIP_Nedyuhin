@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6</title>
+  <link rel="stylesheet" href="./Lab6_Style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./Lab6_Page1.html">Задание 1</a>
+      <a href="./Lab6_Page2.html">Задание 2</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>создайте функцию find(arr, value), которая ищет в массиве arr значение 
+      value и возвращает его номер, если найдено, или -1, если не найдено</p>
+  
+      <hr>
+      <p>Введите массив через <strong>пробел:</strong></p>
+      <input class="long" id="addArrayInput" type="text" onchange="addArray()"></input>
+      <p>Введите значение <strong>value:</strong></p>
+      <input class="short" id="addValueInput" type="text" onchange="addValue()"></input>
+      <button id="findButton" type="button" value="Find index">Найти номера значения в массиве</button>
+      <hr>
+
+      <p id="array"></p>
+      <p id="index"></p>
+    </main>
+
+  <script src="./Lab6_Tusk1.js"></script>
+</body>
+</html>

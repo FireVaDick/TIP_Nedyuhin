@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 9</title>
+  <link rel="stylesheet" href="./Lab9_Style.css">
+</head>
+<body> <!--onload="resume()"-->
+
+  <main>
+    <p><strong>Задание: </strong>разработать HTML страницу, содержащую меню с указателем. При выборе каждого из пунктов на
+      странице должно появляться соответствующее изображение или группа изображение.<br>Ориентация меню: вертикальная,
+      тематика меню: писатели, тип указателя: ручка, изображений: 2, выполняемое действие: циклическая смена</p>
+
+    <nav>
+      <ul>
+        <li>
+          <img src="./images/pen.png" />
+          <label for="writerPushkin" onclick="stop(), i = 1, resume()">
+            <input type="radio" name="writer" id="writerPushkin" value="Пушкин"><span>Пушкин</span></input>
+          </label>
+        </li>
+
+        <li>
+          <img src="./images/pen.png" />
+          <label for="writerLermontov" onclick="stop(), i = 1, resume()">
+            <input type="radio" name="writer" id="writerLermontov" value="Лермонтов"><span>Лермонтов</span></input>
+          </label>
+        </li>
+
+        <li>
+          <img src="./images/pen.png" />
+          <label for="writerGogol" onclick="stop(), i = 1, resume()">
+            <input type="radio" name="writer" id="writerGogol" value="Гоголь"><span>Гоголь</span></input>
+          </label>
+        </li>
+
+        <li>
+          <img src="./images/pen.png" />
+          <label for="writerMushroomEater" onclick="stop(), i = 1, resume()">
+            <input type="radio" name="writer" id="writerMushroomEater" value="Грибоедов"><span>Грибоедов</span></input>
+          </label>
+        </li>
+
+        <li>
+          <img src="./images/pen.png" />
+          <label for="writerTolstoy" onclick="stop(), i = 1, resume()">
+            <input type="radio" name="writer" id="writerTolstoy" value="Толстой"><span>Толстой</span></input>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="cycleImage">
+      <img src="./images/Пушкин/1.jpg" name="image" title="1" alt="Тут должна быть первая фотка" onMouseOver="resumeMouseOver()"/>
+    </div>
+    <div class="cycleImage">
+      <button id="resumeButton" type="button" onclick="i = lastImageNumber, resume()">Продолжить</button>
+      <button id="stopButton" type="button"" onclick="stop()">Остановить</button>
+    </div>
+  </main>
+
+  <script src="./Lab9_Tusk.js"></script>
+</body>
+</html>
