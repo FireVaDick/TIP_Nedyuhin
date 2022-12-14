@@ -1,0 +1,122 @@
+:root {
+  --dark:#0f0f0f;
+  --blackblue:#2d355b;
+  --rock:#666666;
+  --grey:#c9c9c9;
+  --lightgrey:#e6e6e6;
+  --white:#ffffff;
+
+  --pink:#f5b2f5;
+  --lily:#ff8ebd;
+  --bubble:#f54773;
+  --red:#ff0000;
+  --peach:#ff4545;
+  --lightred:#c4383e;
+  --violet:#7030a0;
+  --magenta:#cf10ff; 
+  --water:#4ab7f7;
+  --blue:#2f54fc;
+  --moon:#6666ff;
+  --lavender:#9999ff;
+  --steel:#eeeeff;
+  --orange:#ffa42d;
+  --yellow:#fdfd5e;
+  --lightyellow:#ffff83;
+  --darkgreen:#0e9135;
+  --green:#1cd153;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+header {
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content:space-around;
+  background-color: var(--bubble);
+}
+header a {
+  margin: 0;
+  font: bold 30pt Calibri;
+  color: var(--yellow);
+}
+header a {
+  text-decoration: none;
+}
+header a:first-child {
+  margin-left: 0px;
+}
+header a {
+  margin-left: 25px;
+}
+header a:hover{
+  color: var(--blue);
+}
+
+main{
+  margin: 0 15px;
+  padding: 10px;
+  font: 20pt Calibri;
+}
+main p{
+  margin: 15px 0;
+}
+main div{
+  padding: 10px 0px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.images img {
+  margin: 10px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(255, 248, 148, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+nav:hover {
+
+  background: rgba(236, 229, 132, 0.1);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--green);
+  font-size: 20pt;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: var(--bubble);
+  text-decoration: none;
+}
+nav ul li img{
+  display: none;
+  rotate: 90deg;
+  max-height: 50px;
+  max-width: 50px;
+}

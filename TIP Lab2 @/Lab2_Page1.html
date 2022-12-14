@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="./Lab2_Style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./Lab2_Page1.html">Задание 1</a>
+      <a href="./Lab2_Page2.html">Задание 2</a>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <h1 onclick="Tusk1();">Выполнить ввод пользователя</h1>
+    </div>
+  </main>
+
+  <script>
+    function Tusk1() {
+      let surname = prompt('Введите свою фамилию');
+      let name = prompt('Введите свое имя');
+      let patronymic = prompt('Введите своё отчество');
+      
+      const fullName = `${name} ${surname} ${patronymic}`;
+      
+      const isNameValid = confirm(`${fullName}\nВсе верно?`);
+      isNameValid ? alert(`Добро пожаловать, ${fullName}`) : alert("Ошибка в данных");
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 10</title>
+  <link rel="stylesheet" href="./Lab10_Style.css">
+</head>
+<body>
+
+  <main>
+    <p><strong>Задание: </strong>напишите сценарий, который для заданной даты определяет, сколько дней прошло после некоторого события.
+      В анкете заполняется информация о семи сотрудниках: фамилия, дата заключения контракта. Ровно через одиннадцать месяцев
+      после начала работы сотрудникам предоставляется отпуск продолжительностью 24 рабочих дня.</p>
+      <form>
+        <table class="main">
+          <tr>
+            <th colspan="2">
+              <strong>Введите данные</strong>
+            </th>
+          </tr> 
+      
+          <tr>
+            <td><label for="surname">Фамилия</label></td>
+            <td><input type="text" id="surname" tabindex="1"></td>
+          </tr>
+          <tr>
+            <td><label for="date">Дата</label></td>
+            <td><input type="date" id="date" value="2022-01-01" tabindex="2"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Добавить сотрудника" tabindex="3" onclick="AddEmployee()">
+            </td>
+          </tr>
+        </table>
+    
+        <table class="main">
+          <tr>
+            <th colspan="2">
+              <strong>Выберите, что показать</strong>
+            </th>
+          </tr> 
+
+          <tr>
+            <td><input type="radio" name="tusks" id="tusk-1" tabindex="4" value="1" checked></td>
+            <td><label for="tusk-1">Дата начала и окончания отпуска для каждого из сотрудников;</label></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="tusks" id="tusk-2" tabindex="5" value="2"></td>
+            <td><label for="tusk-2">Фамилии сотрудников, отпуск которым будет предоставлен в заданном месяце;</label></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="tusks" id="tusk-3" tabindex="6" value="3"></td>
+            <td><label for="tusk-3">Фамилии сотрудников, отпуск которых будет завершен в заданном квартале;</label></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="tusks" id="tusk-4" tabindex="7" value="4"></td>
+            <td><label for="tusk-4">Фамилии сотрудников, отпуск которым будет предоставлен в следующем каледарном году;</label></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Выполнить" tabindex="8" onclick="Tasks();">
+            </td>
+          </tr>
+        </table>
+    
+        <p id="result"></р1>
+      </form>
+    </main>
+
+  <script src="./Lab10_Tusk.js"></script>
+</body>
+</html>
