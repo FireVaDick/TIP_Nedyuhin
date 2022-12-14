@@ -1,0 +1,108 @@
+:root {
+  --dark:#0f0f0f;
+  --blackblue:#2d355b;
+  --rock:#666666;
+  --grey:#c9c9c9;
+  --lightgrey:#e6e6e6;
+  --white:#ffffff;
+
+  --pink:#f5b2f5;
+  --lily:#ff8ebd;
+  --bubble:#f54773;
+  --red:#ff0000;
+  --peach:#ff4545;
+  --lightred:#c4383e;
+  --violet:#7030a0;
+  --magenta:#cf10ff; 
+  --water:#0070c0;
+  --blue:#2f54fc;
+  --moon:#6666ff;
+  --lavender:#9999ff;
+  --steel:#eeeeff;
+  --orange:#ffa42d;
+  --yellow:#fdfd5e;
+  --lightyellow:#ffff83;
+  --darkgreen:#0e9135;
+  --green:#1cd153;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content:space-around;
+  background-color: var(--bubble);
+}
+header a {
+  margin: 0;
+  font: bold 30pt Calibri;
+  color: var(--yellow);
+}
+header a {
+  text-decoration: none;
+}
+header a:first-child {
+  margin-left: 0px;
+}
+header a {
+  margin-left: 25px;
+}
+header a:hover{
+  color: var(--blue);
+}
+
+main{
+  margin: 0 15px;
+  padding: 10px;
+  font: 20pt Calibri;
+}
+main p{
+  margin: 10px 0;
+}
+main div{
+  padding: 10px 0px;
+}
+main label:first-child{
+  margin-left: 0px;
+}
+main label{
+  margin-left: 10px;
+  font-weight: bold;
+  color:var(--lavender);
+}
+main input, button{
+  margin-bottom: 5px;
+  padding: 5px;
+  font: 16pt Calibri;
+  border: 2px solid var(--lavender);
+  border-radius: 5px;
+}
+main input.short{
+  width: 80px;
+}
+main input.long{
+  width: 440px;
+}
+main input:hover{
+  border: 2px solid var(--green);
+}
+main button, input[type="submit"]{
+  padding: 5px 15px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  border-color: var(--lavender);
+  background-color: var(--lavender);
+}
+main button:hover, input[type="submit"]:hover{
+  cursor: pointer;
+  border-color: var(--green);
+  background-color: var(--green);
+}

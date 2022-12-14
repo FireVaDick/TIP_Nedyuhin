@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6</title>
+  <link rel="stylesheet" href="./Lab6_Style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="./Lab6_Page1.html">Задание 1</a>
+      <a href="./Lab6_Page2.html">Задание 2</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>создайте массив. Заполните его случайными значениями от А до В. 
+      Значения А, В и размер массива вводятся на форме.
+      Напишите функцию map(fn, array), которая принимает на вход функцию 
+      и массив, и обрабатывает каждый элемент массива этой функцией, возвращая 
+      новый массив</p>
+    
+    <form>
+      <hr>
+      <p>Введите <strong>A</strong> - минимальное число, <strong>B</strong> - максимальное число границ интервала</p>
+      <label>A:</label>
+      <input class="short" id="min" type="number" />
+      <label>B:</label>
+      <input class="short" id="max" type="number" />
+      <label>Длина массива:</label>
+      <input class="short" id="length" type="number" />
+      <button id="generateButton" type="button" value="Generate array">Создать массив</button>
+      <button id="modButton" type="button" value="Square each element">Возвести значения в квадрат</button>
+      <hr>
+    </form>
+
+    <p id="array"></p>
+    <p id="modArray"></p>
+  </main>
+
+  <script src="./Lab6_Tusk2.js"></script>
+</body>
+</html>

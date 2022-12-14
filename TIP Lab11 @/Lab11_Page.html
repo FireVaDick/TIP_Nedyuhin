@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 11</title>
+  <link rel="stylesheet" href="./Lab11_Style.css">
+</head>
+<body>
+  <main>
+    <p><strong>Задание: </strong>отобрать в набор элементы li, которые находятся внутри блока с id="moto_models", в которых
+      содержится текст “мотоцикл”.<br>Отобрать в набор только те картинки, которые находятся внутри блока с id="for_footer"
+      и в качестве значения title имеют значение "Производители".<br>Отобрать в набор только последние ячейки,
+      которые находятся внутри таблицы с id="moto_table " в четных строках</p>
+
+    <div class="ul">
+      Список без id
+      <ul>
+        <li>Мотоцикл Triumph</li>
+        <li>Мотоцикл Kawasaki</li>
+      </ul>
+    </div>
+    <div class="ul" id="moto_models">
+      Список с id = moto_models
+      <ul>
+        <li>Мотоцикл Honda</li>
+        <li>Автомобиль Ford</li>
+        <li>Грузовик Nissan</li>
+        <li>Автомобиль Audi</li>
+        <li>Мотоцикл Suzuki</li>
+        <li>Мотоцикл Yamaha</li>
+      </ul>
+    </div>
+
+    <div class="img">
+      <p>Фотографии без id</p>
+      <img src="./images/Мотоцикл1.jpg" name="image" title="Производители"/>
+      <img src="./images/Мотоцикл2.jpg" name="image" title="Производители"/>
+      <img src="./images/Мотоцикл3.jpg" name="image" title="Клиенты"/>
+      <img src="./images/Мотоцикл4.jpg" name="image" title="Производители"/>
+      <img src="./images/Мотоцикл5.png" name="image" title="Клиенты"/>
+    </div>
+    <div class="img" id="for_footer">
+      <p>Фотографии с id = for_footer</p>
+      <img src="./images/Мотоцикл6.jpg" name="image" title="Клиенты"/>
+      <img src="./images/Мотоцикл9.jpg" name="image" title="Производители"/>
+      <img src="./images/Мотоцикл10.png" name="image" title="Производители"/>
+      <img src="./images/Мотоцикл11.jpg" name="image" title="Клиенты"/>
+    </div>
+
+    <table>
+      <caption>Таблица без id</caption>
+      <tr>
+        <td>Suzuki 345</td>
+        <td>KTM DUKE Nukem</td>
+      </tr>
+      <tr>
+        <td>Yamaha BT120</td>
+        <td>Kawasaki 70p</td>
+      </tr> 
+    </table>
+
+    <table id="moto_table">
+      <caption>Таблица с id = moto_models</caption>
+      <tr>
+        <td>Yamaha YBR125</td>
+        <td>Suzuki GSX-R600</td>
+      </tr>
+      <tr>
+        <td>Kawasaki Ninja 250SL</td>
+        <td>KTM 390 DUKE</td>
+      </tr> 
+      <tr>
+        <td>JAWA 350</td>
+        <td>MINSK TRX 300i</td>
+      </tr>   
+      <tr>
+        <td>Honda HT3500</td>
+        <td>Triumph 5000a</td>
+      </tr>
+    </table>
+
+    <button id="startButton" type="button"" onclick="start()">Выбрать</button>
+
+    <p id="divMotoModelsLiContainer"></p>
+    <p id="divForFooterTitleContainer"></p>
+    <p id="tableMotoTableTrTdLastContainer"></p>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./Lab11_Tusk.js"></script>
+</body>
+</html>
+
+
+<!--
+      <div class="img">
+      <p>Фотографии без id</p>
+      <img src="./images/Nagoriyuki 1 [Han Dong].jpg" name="image" title="Производители"/>
+      <img src="./images/Ymir Fritz 1 [Marvin (Omarvin)].jpg" name="image" title="Производители"/>
+      <img src="./images/Yoneyama Mai Work 41.jpg" name="image" title="Клиенты"/>
+      <img src="./images/Yoneyama Mai Work 42.jpg" name="image" title="Производители"/>
+      <img src="./images/Yoneyama Mai Work 43.jpg" name="image" title="Клиенты"/>
+    </div>
+    <div class="img" id="for_footer">
+      <p>Фотографии с id = for_footer</p>
+      <img src="./images/Dragon 201 [Kalmahul].jpg" name="image" title="Клиенты"/>
+      <img src="./images/Dragon 202 [Kalmahul].jpg" name="image" title="Производители"/>
+      <img src="./images/Dragon 203 [Kalmahul].jpg" name="image" title="Производители"/>
+      <img src="./images/Kalmahul Work 202.jpg" name="image" title="Клиенты"/>
+    </div>
+-->
